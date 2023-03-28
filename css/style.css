@@ -179,20 +179,31 @@ html {
       color: white;
       text-align: center;
       font-size: 2rem;
-      text-shadow: 2px 2px 2px rgba(o,o,o,.8);
+      text-shadow: 2px 2px 2px rgba(0,0,0,.8);
       background-color: rgba(0,0,0,.25);
     }
 /*15. Select the section with the class of `trends`
   - Change background color to `purple`*/
+  .trends {
+    background-color: purple;
+  }
 
 /*16. Select the figure element within the section with the class of `trends`
   - Set `width` to `22%`
   - Apply an appropriate display property value so that you are able to display the figures beside one another
   - Align the figures to be centered within its parent container*/
+  figure > img {
+    width: 22%;
+    margin: auto;
+  }
 
 /*17. Select the caption within the figure
   - Change text color to `white`
   - Adjust style of text to be `italic`*/
+  figcaption {
+    color: white;
+    font-style: italic;
+  }
 
 /*18. Select element with the class of `icon`
   - Apply an appropriate display property value so that you are able to add padding
