@@ -188,13 +188,14 @@ html {
     background-color: purple;
   }
 
-/*16. Select the figure element within the section with the class of `trends`
+/*16. FIX Select the figure element within the section with the class of `trends`
   - Set `width` to `22%`
   - Apply an appropriate display property value so that you are able to display the figures beside one another
   - Align the figures to be centered within its parent container*/
   figure > img {
     width: 22%;
     margin: auto;
+    display: inline;
   }
 
 /*17. Select the caption within the figure
@@ -208,22 +209,33 @@ html {
 /*18. Select element with the class of `icon`
   - Apply an appropriate display property value so that you are able to add padding
   - Add padding to the top and bottom with the value of `2em` and set the left and right value to `0` */
+  .icon {
+    box-sizing: border-box;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 0;
+    padding-right: 0;
+  }
 
 /*19. Select the images within the element with the class of `.icon`
   - Change width to be 260px
   - float the element to the left
-  - Give some space to the right of the image with margin set to `2em`   */    
-  .icon + img {
-    widows: 260px;
+  - Give some space to the right of the image with margin set to `2em`*/    
+  .icon > img {
+    width: 260px;
     float: left;
     margin-right: 2em;
   }
 /*20. Select the p that follows the last fashion icon (Jennifer Aniston) 
   - Clear the left float so that things display as they should and do not overlap*/
-
+  .wrapper:last-child {
+    clear: left;
+  }
 /*21. There is an unfinished section called Feature Articles. Select the element with the class of `.featured-articles`
   - Set it to not display on the page at all */
-
+  .featured-articles {
+    display: none;
+  }
 /*22. Select footer
   - Change background color to black
   - Change text color to white*/
@@ -236,9 +248,9 @@ html {
   - Ajust alignment to be centered
   - Add padding to the top and bottom with the value of `8px` and set the left and right value to `0`  */  
     footer > p {
-        /*class wrapper*/
+        text-align: center;
         padding-top: 8px;
         padding-bottom: 8px;
         padding-left: 0;
         padding-right: 0;
-    } 
+    }
