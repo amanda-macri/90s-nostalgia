@@ -193,8 +193,8 @@ html {
   - Align the figures to be centered within its parent container*/
   section.trends figure {
     width: 22%;
-    margin: auto;
-    display: inline;
+    display: inline-block;
+    text-align: center;
   }
 
 /*17. Select the caption within the figure
@@ -220,7 +220,7 @@ html {
   - Change width to be 260px
   - float the element to the left
   - Give some space to the right of the image with margin set to `2em`*/    
-  .icon > img {
+  .icon  img {
     width: 260px;
     float: left;
     margin-right: 2em;
